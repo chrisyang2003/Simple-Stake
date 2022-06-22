@@ -10,5 +10,7 @@
 -  showReward(address _user) 显示用户收益
 
 部署时，设置参数tokenPerBlock控制每一个区块的奖励数。每一次改变池中状态时都会调用update函数，从而更新区块奖励数和acctokenPerShare质押每一个lp的奖励份额。
-
+$$
+可以获得的token数= tokenPerBlock \times \frac{allocPoint}{totalAllocPoint}
+$$
 代币均遵守erc20规范
